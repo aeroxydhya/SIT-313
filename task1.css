@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+nav {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #004499;
+}
+
+.header.image {
+  position: relative;
+  height: 300px;
+}
+.header.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px 20px;
+  font-size: 2em;
+  border-radius: 5px;
+}
+
+.profile {
+  text-align: center;
+  padding: 30px 10px;
+}
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 20px;
+  align-items: center;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  background: none;       /* remove card background */
+  border: none;           /* remove border/line */
+  box-shadow: none;       /* remove shadow */
+  width: 80%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.project-card img {
+  width: 200px;           /* fixed same width */
+  height: 150px;          /* fixed same height */
+  object-fit: cover;      /* ensures crop but same size */
+  margin-right: 20px;
+  border-radius: 10px;    /* rounded corners */
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #222;
+}
+
+.project-info p {
+  margin: 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contact {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+.contact a {
+  color: #0066cc;
+}
